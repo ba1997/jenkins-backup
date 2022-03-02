@@ -1,0 +1,42 @@
+Started by user [8mha:////4OaAX53dyIVU65enHH35E/DrqQo6dTQbSu+/WJH4EiMEAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4LmuBGmJUO1jkhqohySXl4um9TntYY1d1nmwfhGLIX01AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUQwA49mDyxQAAAA==[0mslave1 in workspace /opt/jenkins/workspace/c-project1
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/ba1997/c-project1.git
+ > git init /opt/jenkins/workspace/c-project1 # timeout=10
+Fetching upstream changes from https://github.com/ba1997/c-project1.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/ba1997/c-project1.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/ba1997/c-project1.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision a4293acca1602eb862a86733a9d97617848bbb8c (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a4293acca1602eb862a86733a9d97617848bbb8c # timeout=10
+Commit message: "Delete main.o"
+First time build. Skipping changelog.
+[c-project1] $ /bin/sh -xe /tmp/jenkins14426036377448187569.sh
++ cd /opt/jenkins/workspace/c-project1
++ make
+gcc -c main.c
+main.c: In function ‘main’:
+main.c:3:9: warning: implicit declaration of function ‘biggest’ [-Wimplicit-function-declaration]
+         biggest();
+         ^~~~~~~
+main.c:4:9: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+         factorial();
+         ^~~~~~~~~
+gcc -c big2.c
+big2.c:2:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+ biggest()
+ ^~~~~~~
+gcc -c fact.c
+fact.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  factorial() {
+  ^~~~~~~~~
+gcc -o ABC.exe main.o big2.o fact.o
+Finished: SUCCESS

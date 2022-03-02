@@ -1,0 +1,88 @@
+Started by user [8mha:////4OaAX53dyIVU65enHH35E/DrqQo6dTQbSu+/WJH4EiMEAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4GCxtmP0CPfy2ylIyqGICDSLApgV4MLFkifV/fK34je4AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /opt/jenkins/workspace/example-java
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /opt/jenkins/workspace/example-java/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ba1997/example-java.git # timeout=10
+Fetching upstream changes from https://github.com/ba1997/example-java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/ba1997/example-java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision a35a6de4786e9b13675bb0f4bdf162adfb81d698 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a35a6de4786e9b13675bb0f4bdf162adfb81d698 # timeout=10
+Commit message: "Update HelloWorld.java"
+ > git rev-list --no-walk a35a6de4786e9b13675bb0f4bdf162adfb81d698 # timeout=10
+[example-java] $ mvn -f pom.xml clean package
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.jacoco:org.jacoco.examples.maven.java >--------------
+[INFO] Building JaCoCo Maven plug-in example for Java project 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ org.jacoco.examples.maven.java ---
+[INFO] Deleting /opt/jenkins/workspace/example-java/target
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.7:prepare-agent (default) @ org.jacoco.examples.maven.java ---
+[INFO] argLine set to -javaagent:/home/ec2-user/.m2/repository/org/jacoco/org.jacoco.agent/0.8.7/org.jacoco.agent-0.8.7-runtime.jar=destfile=/opt/jenkins/workspace/example-java/target/jacoco.exec
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ org.jacoco.examples.maven.java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/jenkins/workspace/example-java/src/main/resources
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ org.jacoco.examples.maven.java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /opt/jenkins/workspace/example-java/target/classes
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ org.jacoco.examples.maven.java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /opt/jenkins/workspace/example-java/src/test/resources
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ org.jacoco.examples.maven.java ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /opt/jenkins/workspace/example-java/target/test-classes
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ org.jacoco.examples.maven.java ---
+[INFO] Surefire report directory: /opt/jenkins/workspace/example-java/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.jacoco.examples.maven.java.HelloWorldTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- jacoco-maven-plugin:0.8.7:report (report) @ org.jacoco.examples.maven.java ---
+[INFO] Loading execution data file /opt/jenkins/workspace/example-java/target/jacoco.exec
+[INFO] Analyzed bundle 'JaCoCo Maven plug-in example for Java project' with 1 classes
+[INFO] 
+[8mha:////4C3Oo8eNQp7yagXF48sBWAHrVMq7z1TL9jBK0Y7ifHz1AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75Zek2mxOX+vh68DGxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAAAn9LoiYAAAAA==[0m[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ org.jacoco.examples.maven.java ---
+[INFO] Building jar: /opt/jenkins/workspace/example-java/target/org.jacoco.examples.maven.java-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.808 s
+[INFO] Finished at: 2022-02-28T14:04:39Z
+[INFO] ------------------------------------------------------------------------
+ERROR: Step ‘Deploy war/ear to a container’ aborted due to exception: 
+java.lang.InterruptedException: [DeployPublisher][WARN] No wars found. Deploy aborted. %n
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:107)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:803)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:752)
+	at hudson.model.Build$BuildExecution.post2(Build.java:177)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:697)
+	at hudson.model.Run.execute(Run.java:1931)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Finished: FAILURE

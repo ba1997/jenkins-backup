@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>slave2</name>
+  <description>java-project</description>
+  <remoteFS>/opt/jenkins/</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.33.0">
+    <host>172.31.84.244</host>
+    <port>22</port>
+    <credentialsId>f3d483fe-76f8-4a2c-9497-9ace82a7e00e</credentialsId>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.ManuallyProvidedKeyVerificationStrategy">
+      <key>
+        <algorithm>ssh-rsa</algorithm>
+        <key>AAAAB3NzaC1yc2EAAAADAQABAAABgQCgneu2+pF/WiQMp4VXMo0nGFK615ZhtOglKcwTz2ibvyEVjFX1NxiRzrzwiE6pyIA5f3smUxsb1ZbMSMgptuu9K/5c9RY3Ahu0qz6NRvN1wvsLuWAjmnQc/D92+g8AjakREnY4wFyE/wNLtTUKcZbloKpXxbHLhWE1yEu1qidl/OdkNLfPFn1PZNtlUkkjr5c4V8FOEqD4VOQLaLlrYwPCvUi85AkZFlqHKfYEtQrkBnAB8DnLYLEI9fwseastEtwLOhzwlAIjpKafKOvLJqMfftJYxXz7xOZp+qpVWcg+VnLXdgIBib7lSVRm0rRf9mpzDVsaTv30NxA3mObdTiz4XPr6lUQkRuffdBfXjknkz7gIx0HwdRYgn+gQ7BpDqQKIGnMPtpcb41YWax0GWk7ZSH3DPESqd37OAkFuV6E0XLyqdulYmlFZX2LaY5vk9boof0L6QbFJxJwQh+MU9W/zmoxLJd3gGeDM+Eu0stR7WpFxEqaoUXGKl0Wec0ca85U=</key>
+      </key>
+    </sshHostKeyVerificationStrategy>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label></label>
+  <nodeProperties/>
+</slave>

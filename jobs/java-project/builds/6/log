@@ -1,0 +1,21 @@
+Started by GitHub push by ba1997
+Running as SYSTEM
+Building remotely on [8mha:////4GCxtmP0CPfy2ylIyqGICDSLApgV4MLFkifV/fK34je4AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /opt/jenkins/workspace/java-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /opt/jenkins/workspace/java-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ba1997/example-java.git # timeout=10
+Fetching upstream changes from https://github.com/ba1997/example-java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/ba1997/example-java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d510f45c4417cef2ef2c728b6cae3ad29a444034 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d510f45c4417cef2ef2c728b6cae3ad29a444034 # timeout=10
+Commit message: "Update HelloWorld.java"
+ > git rev-list --no-walk 260cea044e07f6dc5967d3a25b6f89d4f6f7305c # timeout=10
+[java-project] $ /bin/sh -xe /tmp/jenkins5090819360361953045.sh
++ cd /opt/jenkins/workspace/java-project
+Finished: SUCCESS

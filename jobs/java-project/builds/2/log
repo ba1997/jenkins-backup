@@ -1,0 +1,24 @@
+Started by user [8mha:////4OaAX53dyIVU65enHH35E/DrqQo6dTQbSu+/WJH4EiMEAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4GCxtmP0CPfy2ylIyqGICDSLApgV4MLFkifV/fK34je4AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /opt/jenkins/workspace/java-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /opt/jenkins/workspace/java-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/ba1997/example-java.git # timeout=10
+Fetching upstream changes from https://github.com/ba1997/example-java.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/ba1997/example-java.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b77ae8c42e51988a6d3abd92cc9dec061c244407 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b77ae8c42e51988a6d3abd92cc9dec061c244407 # timeout=10
+Commit message: "Merge pull request #36 from codecov/dependabot/maven/junit-junit-4.13.2"
+ > git rev-list --no-walk b77ae8c42e51988a6d3abd92cc9dec061c244407 # timeout=10
+[java-project] $ /bin/sh -xe /tmp/jenkins7498986410769758571.sh
++ cd /opt/jenkins/workspace/java-project
++ maven
+/tmp/jenkins7498986410769758571.sh: line 4: maven: command not found
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
